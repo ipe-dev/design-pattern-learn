@@ -1,7 +1,7 @@
 <?php
 
 /**
- * undocumented class
+ * マガモクラス
  */
 final class MallardDuck extends Duck
 {

@@ -1,14 +1,30 @@
 <?php
 
 /**
- * undocumented class
+ * Duckの抽象クラス
  */
-abstract class Duck  
+abstract class Duck
 {
-    public QuackBehavior $quackBehavior;    
+	public FlyBehavior $flyBehavior;
+	public QuackBehavior $quackBehavior;
+	public function __construct()
+	{
+	}
 
-    public function performQuack(): void
-    {
-        $this->quackBehavior->quack();
-    }
+	abstract public function display(): void;
+
+	public function performFly(): void
+	{
+		$this->flyBehavior->fly();
+	}
+
+	public function performQuack(): void
+	{
+		$this->quackBehavior->quack();
+	}
+
+	public function swim(): void
+	{
+		print_r("全てのカモは浮きます");
+	}
 }
