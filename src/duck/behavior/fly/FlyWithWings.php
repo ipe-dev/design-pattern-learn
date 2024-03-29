@@ -1,5 +1,7 @@
 <?php
 
+namespace App\duck\behavior\fly;
+use App\duck\interface\FlyBehavior;
 /**
  * 飛ぶ振る舞いのクラス
  */

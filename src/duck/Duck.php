@@ -1,4 +1,8 @@
 <?php
+namespace App\duck;
+
+use App\duck\interface\FlyBehavior;
+use App\duck\interface\QuackBehavior;
 
 /**
  * Duckの抽象クラス

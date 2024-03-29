@@ -1,5 +1,7 @@
 <?php
 
+namespace App\duck\behavior\quack;
+use App\duck\interface\QuackBehavior;
 /**
  * ガーガー鳴く振る舞い
  */

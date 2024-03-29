@@ -1,5 +1,9 @@
 <?php
+namespace App\duck;
 
+use App\duck\behavior\quack\Quack;
+use App\duck\behavior\fly\FlyWithWings;
+use App\duck\Duck;
 /**
  * マガモクラス
  */
@@ -10,7 +14,8 @@ final class MallardDuck extends Duck
 		$this->quackBehavior = new Quack();
 		$this->flyBehavior = new FlyWithWings();
 	}
-	public function display() {
-		print_r("私はマガモです");
+	public function display(): void
+	{
+		echo "私はマガモです";
 	}
 }
