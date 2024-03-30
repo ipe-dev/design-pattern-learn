@@ -1,14 +1,15 @@
 <?php
-
 namespace App\duck\behavior\fly;
+
 use App\duck\interface\FlyBehavior;
+
 /**
- * 飛ぶ振る舞いのクラス
+ * undocumented class
  */
-final class FlyWithWings implements FlyBehavior
+final class FlyRocketPowered implements FlyBehavior
 {
     public function fly(): void
     {
-        print_r("飛んでいます！！\n");
+        echo "ロケットで飛んでいます！\n";
     }
 }

@@ -15,6 +15,16 @@ abstract class Duck
 	{
 	}
 
+	public function setFlyBehavior(FlyBehavior $fb): void
+	{
+		$this->flyBehavior = $fb;
+	}
+
+	public function setQuackBehavior(QuackBehavior $qb): void
+	{
+		$this->quackBehavior = $qb;
+	}
+
 	abstract public function display(): void;
 
 	public function performFly(): void

@@ -9,6 +9,6 @@ final class Quack implements QuackBehavior
 {
     public function quack(): void
     {
-        print_r("ガーガー");
+        print_r("ガーガー\n");
     }
 }
