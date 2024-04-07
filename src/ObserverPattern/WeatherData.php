@@ -47,6 +47,11 @@ final class WeatherData implements Subject
 		return $this->humidity;
 	}
 
+	public function getPressure(): float
+	{
+		return $this->pressure;
+	}
+
 	public function measurementChanged(): void
 	{
 		$this->notifyObservers();
