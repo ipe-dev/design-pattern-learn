@@ -1,4 +1,5 @@
 <?php
+
 namespace App\FactoryPattern\Pizza;
 
 abstract class Pizza
@@ -12,16 +13,16 @@ abstract class Pizza
     public Clams $clam;
     abstract function prepare(): void;
 
-    public function bake():void
+    public function bake(): void
     {
         echo "180度で25分間焼く" . PHP_EOL;
     }
-    public function cut():void
+    public function cut(): void
     {
         echo "ピザを扇形にカットする" . PHP_EOL;
     }
 
-    public function box():void
+    public function box(): void
     {
         echo "PizzaStoreの箱にピザを入れる" . PHP_EOL;
     }
@@ -29,5 +30,4 @@ abstract class Pizza
     {
         return $this->name;
     }
-
 }
